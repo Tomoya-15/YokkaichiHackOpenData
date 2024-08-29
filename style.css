@@ -1,0 +1,105 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fff7e6; /* 背景を淡い暖色に設定 */
+    color: #333; /* テキストの色をダークグレーに設定 */
+}
+
+header {
+    background-color: #f0a500; /* 暖色系のヘッダー背景色 */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #f08a00;
+}
+
+p {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+/* 使い方セクションのスタイル */
+.usage-section {
+    width: 80%; /* セクションの幅を設定 */
+    margin: 0 auto; /* セクション全体を中央に配置 */
+    text-align: left; /* テキストを左揃え */
+}
+
+ul {
+    padding-left: 1.5em; /* インデントを追加 */
+    list-style-type: disc; /* デフォルトの箇条書きスタイル */
+    margin-top: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5; /* 行間を少し広げて読みやすく */
+}
+
+#ur {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+#ur a {
+    text-decoration: none;
+    background-color: #272fa3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#ur a:hover {
+    background-color: #d97a00; /* ボタンのホバー効果 */
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap; /* 画面サイズに応じて折り返す */
+    gap: 20px; /* 要素間の余白を追加 */
+    padding: 0 20px;
+}
+
+#map {
+    flex: 3;
+    height: 80vh; /* 地図の高さを調整 */
+    min-width: 300px; /* 最小幅を設定 */
+}
+
+#comment-list {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-width: 250px; /* 最小幅を設定 */
+}
+
+@media (max-width: 768px) {
+    #container {
+        flex-direction: column; /* モバイル画面では縦並びにする */
+    }
+
+    #map, #comment-list {
+        height: 50vh; /* モバイル画面では高さを縮める */
+    }
+}
