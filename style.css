@@ -69,6 +69,13 @@ ul li {
     background-color: #d97a00; /* ボタンのホバー効果 */
 }
 
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #f0a500;
+    border-radius: 10px;
+}
+
 @media (max-width: 768px) {
     iframe {
         width: 90%;
