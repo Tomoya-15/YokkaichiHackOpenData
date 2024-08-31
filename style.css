@@ -1,3 +1,5 @@
+/* style.css */
+
 body {
     margin: 0;
     padding: 0;
@@ -33,21 +35,21 @@ p {
 
 /* 使い方セクションのスタイル */
 .usage-section {
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
+    width: 80%; /* セクションの幅を設定 */
+    margin: 0 auto; /* セクション全体を中央に配置 */
+    text-align: left; /* テキストを左揃え */
 }
 
 ul {
-    padding-left: 2em; /* インデントを追加 */
+    padding-left: 1.5em; /* インデントを追加 */
     list-style-type: disc; /* デフォルトの箇条書きスタイル */
     margin-top: 0;
-    font-size: 1.1em; /* フォントサイズを調整 */
 }
 
 ul li {
     margin-bottom: 10px;
-    line-height: 1.6; /* 行間を広げて読みやすく */
+    font-size: 1em;
+    line-height: 1.5; /* 行間を少し広げて読みやすく */
 }
 
 #ur {
@@ -58,7 +60,7 @@ ul li {
 
 #ur a {
     text-decoration: none;
-    background-color: #f08a00; /* ボタンの色をヘッダーに合わせて暖色に設定 */
+    background-color: #272fa3;
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -71,15 +73,15 @@ ul li {
 
 #container {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    flex-wrap: wrap; /* 画面サイズに応じて折り返す */
+    gap: 20px; /* 要素間の余白を追加 */
     padding: 0 20px;
 }
 
 #map {
     flex: 3;
-    height: 80vh;
-    min-width: 300px;
+    height: 80vh; /* 地図の高さを調整 */
+    min-width: 300px; /* 最小幅を設定 */
 }
 
 #comment-list {
@@ -89,21 +91,15 @@ ul li {
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    min-width: 250px;
+    min-width: 250px; /* 最小幅を設定 */
 }
-
-/* iframe {
-    display: block;
-    margin: 20px auto;
-    border: 2px solid #f0a500;
-    border-radius: 10px;
-} */
 
 @media (max-width: 768px) {
     #container {
-        flex-direction: column;
+        flex-direction: column; /* モバイル画面では縦並びにする */
     }
+
     #map, #comment-list {
-        height: 50vh;
+        height: 50vh; /* モバイル画面では高さを縮める */
     }
 }
