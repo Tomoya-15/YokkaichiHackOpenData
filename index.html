@@ -17,5 +17,25 @@
         </div>
     </header>
     <iframe src="https://www.google.com/maps/d/embed?mid=1veE21b1qpHMwjUu7ZM_SAlCSQcxqe7Q&ehbc=2E312F" width="920" height="480"></iframe>
+    <p>
+        この下の地図では，萬古焼を配置するための最適な場所を共有し，意見を可視化するために作成しました．<br>
+    </p>
+    <!-- ここで共通の div を追加 -->
+    <div class="usage-section">
+        <h3>使い方</h3>
+        <ul>
+            <li>萬古焼をここに置くと魅力的だと思うところをクリックする</li>
+            <li>理由などのコメントを書いてOKを押すと記録されます．</li>
+        </ul>
+    </div>
+    <div id="container">
+        <div id="map" style="height: 100vh;"></div>
+        <div id="comment-list">
+            <!-- コメントリストがここに表示されます -->
+        </div>
+    </div>
+    <!-- LeafletのJavaScriptをインクルード -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
