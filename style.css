@@ -94,6 +94,13 @@ ul li {
     min-width: 250px; /* 最小幅を設定 */
 }
 
+iframe {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #f0a500;
+    border-radius: 10px;
+}
+
 @media (max-width: 768px) {
     #container {
         flex-direction: column; /* モバイル画面では縦並びにする */
@@ -101,5 +108,9 @@ ul li {
 
     #map, #comment-list {
         height: 50vh; /* モバイル画面では高さを縮める */
+    }
+    iframe {
+        width: 90%;
+        height: 400px;
     }
 }
